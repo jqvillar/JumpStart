@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $('.carousel').on('init', function(event, slick){
+      console.log("initialized")
+  });
+
   $('.carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
@@ -8,5 +13,4 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
-
 });
